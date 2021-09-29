@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:white;
+    width: 100%;
+    height: 8vh;
+align-items: center;
+border-bottom: solid 1px;
+
+}
+nav a{
+    text-decoration: none;
+    color:  rgb(30, 128, 255);;
+width:20%;
+}
+#navBar{
+    display: flex;
+justify-content: space-evenly;
+width: 40%;
+
+}
+#navBar li {
+list-style-type: none;
+}
+#navBar a {
+    text-decoration: none;
+    color: rgb(30, 128, 255);
+    font-size: x-large;
+}
+main{
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+#Holder{
+    display: flex;
+    flex-wrap: wrap;
+    width:100% ;
+}
+#Holder article{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+     align-items:center;
+    width: 19%;
+    height: 330px;
+    border: 0.5px solid black;
+    border-radius: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3px;
+}
+.bookImg{
+    width: 60%;
+    height: 200px;
+   
+}
+.bookImg img{
+    width: 100%;
+    height: 100%;
+   
+}
+.addBtn{
+    background-color:cornflowerblue;
+    width: 150px;
+    height: 30px;
+    border-radius: 8%;
+    font-size:medium;
+ color: white;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: blanchedalmond;
+}
+@media screen and (max-width:768px){
+    #navBar{
+        width: 80%;
+    }
+    #Holder article{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width:500px){
+
+    .addBtn{
+        width: 100px;
+    }
+     
+ }
