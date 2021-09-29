@@ -12,5 +12,5 @@ for(let i=0;i<5;i++){
   for(let i=0;i<books.length;i++){
       add[i].addEventListener("click",()=>{
        cart.push(books[i])
-   console.log(cart);
+   
       })}

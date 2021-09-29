@@ -23,8 +23,6 @@ bookImg[i].innerHTML=`<img src=${books[i].imgs[1]}>`
    bookImg[i].addEventListener("mouseout",()=>{      
 bookImg[i].innerHTML=`<img src=${books[i].imgs[0]}>`})
 
-
-
 })}
 
 

@@ -7,7 +7,7 @@ let cart=[
 imgs: ["/media/sa3(1).jpg","/media/sa3(2).jpg"]   },
     {name:"the return of the king"   ,
     id: 15  ,
-    price:15 ,
+    price:13 ,
     description:"One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them",
  category:"fantasy" ,  
 imgs: ["/media/lotr3(1).jfif","/media/lotr3(2).jfif"]   },
@@ -21,7 +21,7 @@ imgs: ["/media/drac1(1).jfif","/media/drac1(2).jfif"]   },
 let sum=0;
 let revBtn=document.getElementsByClassName("revBtn")
 let row=document.getElementsByClassName("tableRow")  
-let counter=0;
+
 
       for(let i=0;i<cart.length;i++){
     cartTable.innerHTML+= ` <tr class="tableRow">
@@ -32,14 +32,14 @@ let counter=0;
          for (let i = 0; i < cart.length; i++) {
                 sum+=cart[i].price;
                 total.innerHTML=`<p>Total Price:${sum}$<p>`
-
+                
             }
         for(let i=0;i<cart.length;i++){
             revBtn[i].addEventListener("click",()=>{
              cart.splice(i,1)
-                 row[i].innerHTML=` `;
+                 row[i].innerHTML=``;
              total.innerHTML=`<p>Total Price:${sum-=cart[i].price}$<p>`;
-             
+
             })}
  
   
